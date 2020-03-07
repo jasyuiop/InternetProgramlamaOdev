@@ -17,5 +17,15 @@ namespace AspNetLogin
         {
             Response.Redirect("Signup.aspx");
         }
+
+        protected void signInBttn_Click(object sender, EventArgs e)
+        {
+            /*
+             message box çalıştırıp redirect yapınca mboxu görmeden redirect oluyor, mbox kodu ekrana basıldıktan sonra bekletip redirect çalıştırmak lazım
+             thread açıp sleepte yapabilirdim galiba..
+             onun yerine mbox + redirect işlemlerini js ile yaptım.
+             */
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "AuthSuccess()", true);
+        }
     }
 }

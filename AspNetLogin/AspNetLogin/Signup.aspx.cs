@@ -13,5 +13,15 @@ namespace AspNetLogin
         {
 
         }
+
+        protected void register_Click(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "SignUpSuccess()", true);
+        }
+
+        protected void giveUp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
     }
 }
