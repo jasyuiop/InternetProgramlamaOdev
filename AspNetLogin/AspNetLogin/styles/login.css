@@ -1,0 +1,38 @@
+﻿body {
+    background-color: whitesmoke;
+}
+
+.auth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    border-radius: 10px;
+    padding-left: 3px;
+}
+
+.authBttns {
+    width: 100px;
+    height: 30px;
+}
+
+#signUpBttn {
+    margin-left: 45px;
+}
+
+#out {
+    width: 100%;
+}
+
+.in {
+    display: inline-block;
+}
