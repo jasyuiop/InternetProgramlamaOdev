@@ -42,3 +42,8 @@ input {
 .in {
     display: inline-block;
 }
+
+.validation {
+    font-size: 15px;
+    color: red;
+}

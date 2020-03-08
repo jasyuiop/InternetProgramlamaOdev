@@ -33,6 +33,15 @@ namespace AspNetLogin
         protected global::System.Web.UI.WebControls.TextBox userNameTxtbx;
 
         /// <summary>
+        /// UserNameReqFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator UserNameReqFieldValidator;
+
+        /// <summary>
         /// userPassTxtbx control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace AspNetLogin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox userPassTxtbx;
+
+        /// <summary>
+        /// PassReqFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator PassReqFieldValidator;
 
         /// <summary>
         /// signInBttn control.

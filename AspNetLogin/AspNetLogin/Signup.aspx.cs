@@ -16,6 +16,7 @@ namespace AspNetLogin
 
         protected void register_Click(object sender, EventArgs e)
         {
+            //SetFocusOnError seçeneğini açarsan validator'lerde eşleşmeyen veri varsa fonksiyon çalışmasına izin vermiyor.
             ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "text", "SignUpSuccess()", true);
         }
 
