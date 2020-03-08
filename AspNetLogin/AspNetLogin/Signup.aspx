@@ -24,8 +24,8 @@
             <asp:TextBox ID="userNameTxtbx" placeholder="Kullanıcı Adı" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator CssClass="validation" ID="UserNameReqFieldValidator" runat="server" ErrorMessage="Lütfen Doldurunuz." ControlToValidate="userNameTxtbx" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
 
-            <asp:TextBox ID="userPassTxtbx" placeholder="Şifre" runat="server"></asp:TextBox>
-            <asp:TextBox ID="userPassVerifyTxtbx" placeholder="Şifrenizi Tekrar Girin" runat="server"></asp:TextBox>
+            <asp:TextBox ID="userPassTxtbx" placeholder="Şifre" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="userPassVerifyTxtbx" placeholder="Şifrenizi Tekrar Girin" runat="server" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator CssClass="validation" ID="PassReqFieldValidator" runat="server" ErrorMessage="Lütfen Doldurunuz." ControlToValidate="userPassTxtbx" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator CssClass="validation" ID="PassVerifyReqFieldValidator" runat="server" ErrorMessage="Lütfen şifrenizi tekrar girin." ControlToValidate="userPassVerifyTxtbx" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
             <asp:CompareValidator CssClass="validation" ID="PassCompareValidator" runat="server" ControlToCompare="userPassTxtbx" ControlToValidate="userPassVerifyTxtbx" ErrorMessage="Şifreler uyuşmuyor!" Display="Dynamic" SetFocusOnError="True"></asp:CompareValidator>

@@ -8,7 +8,7 @@
             <asp:TextBox ID="userNameTxtbx" placeholder="Kullanıcı Adı" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator CssClass="validation" ID="UserNameReqFieldValidator" runat="server" ErrorMessage="Lütfen kullanıcı adı giriniz." ControlToValidate="userNameTxtbx" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
 
-            <asp:TextBox ID="userPassTxtbx" placeholder="Kullanıcı Şifresi" runat="server"></asp:TextBox>
+            <asp:TextBox ID="userPassTxtbx" placeholder="Kullanıcı Şifresi" runat="server" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator CssClass="validation" ID="PassReqFieldValidator" runat="server" ErrorMessage="Lütfen kullanıcı şifrenizi giriniz." ControlToValidate="userPassTxtbx" Display="Dynamic" SetFocusOnError="True"></asp:RequiredFieldValidator>
         </div>
         <div id="out">
